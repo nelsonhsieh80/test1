@@ -1,0 +1,6 @@
+step 1 action: Attempted official Bank of Taiwan listed exchange rate CSV endpoint
+step 1 result: official endpoint returned Challenge Validation, not exchange-rate data
+step 2 action: Fetched third-party page that states it synchronizes Taiwan Bank listed rates
+step 2 result: fallback update time: 2026-06-29 17:00; today: 2026-07-06; is_today: False
+step 3 action: Located USD row and extracted cash and spot buying/selling rates
+FINAL DATA: source=https://www.findrate.tw/bank/29/; updated_at=2026-06-29 17:00; cash_buy=31.46; cash_sell=32.13; spot_buy=31.785; spot_sell=31.935; today_verified=False

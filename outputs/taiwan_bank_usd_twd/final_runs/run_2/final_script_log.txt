@@ -1,0 +1,10 @@
+step 1 action: Open Bank of Taiwan listed exchange rate page
+step 1 screenshot: C:\Users\best5\OneDrive\Desktop\GitHub\test1\outputs\taiwan_bank_usd_twd\final_runs\run_2\screenshots\final_execution_1_bank_of_taiwan_page.png
+step 1 result: reached official page; title=臺灣銀行牌告匯率; url=https://rate.bot.com.tw/xrt?Lang=zh-TW
+step 2 action: Confirm today's listed exchange-rate date and quote timestamp
+step 2 screenshot: C:\Users\best5\OneDrive\Desktop\GitHub\test1\outputs\taiwan_bank_usd_twd\final_runs\run_2\screenshots\final_execution_2_today_quote_time.png
+step 2 result: date_line=2026/07/06 本行非營業時間牌告匯率; quote_time=2026/07/06 20:21
+step 3 action: Locate USD row and extract cash and spot buying/selling rates
+step 3 screenshot: C:\Users\best5\OneDrive\Desktop\GitHub\test1\outputs\taiwan_bank_usd_twd\final_runs\run_2\screenshots\final_execution_3_usd_row_rates.png
+step 3 result: USD row found; cash_buy=31.625; cash_sell=32.295; spot_buy=31.95; spot_sell=32.1
+FINAL DATA: source=https://rate.bot.com.tw/xrt?Lang=zh-TW; quote_time=2026/07/06 20:21; currency=USD/TWD; cash_buy=31.625; cash_sell=32.295; spot_buy=31.95; spot_sell=32.1
