@@ -1,0 +1,4 @@
+step 0 action: params: product_url=https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+step 1 action: open product page
+step 3 action: parse structured data and visible page text
+step 4 action: final result: {"product_name": "A Light in the Attic", "current_price": "£51.77", "extracted_at": "2026-07-08T19:09:00+08:00"}
