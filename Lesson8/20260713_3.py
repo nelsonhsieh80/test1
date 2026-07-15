@@ -1,4 +1,4 @@
-import random  # 引入 random 模組，用於產生隨機數
+4rul奧import random  # 引入 random 模組，用於產生隨機數
 
 def play_game():
     # 產生 1~100 之間的隨機整數作為目標答案
