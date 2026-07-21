@@ -14,13 +14,12 @@ from tkinter import messagebox, ttk
 
 from PIL import Image, ImageOps, ImageTk
 
-from practice5 import (
-    OUTPUT_DIR,
-    CheckResult,
-    check_website_core,
-    validate_timeout,
-    validate_url,
-)
+_core = __import__("20260720_5")
+OUTPUT_DIR = _core.OUTPUT_DIR
+CheckResult = _core.CheckResult
+check_website_core = _core.check_website_core
+validate_timeout = _core.validate_timeout
+validate_url = _core.validate_url
 
 
 COLORS = {
@@ -40,8 +39,6 @@ COLORS = {
 
 
 class WebsiteHealthApp:
-    """網站健康檢查主視窗。"""
-
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
         self.result_queue: queue.Queue[CheckResult] = queue.Queue()
@@ -542,7 +539,7 @@ class WebsiteHealthApp:
         try:
             system = platform.system()
             if system == "Windows":
-                os.startfile(OUTPUT_DIR)  # type: ignore[attr-defined]
+                os.startfile(OUTPUT_DIR)
             elif system == "Darwin":
                 subprocess.Popen(["open", str(OUTPUT_DIR)])
             else:
